@@ -70,7 +70,7 @@ public class Cue : MonoBehaviour
         this.transform.RotateAround(cueBall.transform.position, Vector3.up, -input * speedMulti * Time.deltaTime);
     }
 
-    private void PositionCue()
+    public void PositionCue()
     {
         // Reset rotation
         this.transform.rotation = new Quaternion(0.0f, 0.0f, 0.70711f, 0.70711f);
