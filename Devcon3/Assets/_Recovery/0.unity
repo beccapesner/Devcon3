@@ -271,7 +271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7b8c280133350745896f4475c643696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectBall
-  isStriped: 1
+  isStriped: 0
   isEightBall: 0
 --- !u!1 &59902492
 GameObject:
@@ -393,7 +393,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 125590430}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -423,10 +423,6 @@ Transform:
   - {fileID: 710565705}
   - {fileID: 370553900}
   - {fileID: 1878519452}
-  - {fileID: 1335459647}
-  - {fileID: 749353465}
-  - {fileID: 401538560}
-  - {fileID: 1676207375}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &187867198
@@ -708,7 +704,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7b8c280133350745896f4475c643696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectBall
-  isStriped: 1
+  isStriped: 0
   isEightBall: 0
 --- !u!1 &312375038
 GameObject:
@@ -917,59 +913,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.89209, y: 0.7587726, z: 2.6678772}
   m_Center: {x: -1.4461889, y: 0.8068938, z: -0.6544473}
---- !u!1 &401538559
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 401538560}
-  - component: {fileID: 401538561}
-  m_Layer: 6
-  m_Name: Bound (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &401538560
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 401538559}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.01, y: 0, z: -2.885}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 125590430}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!65 &401538561
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 401538559}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.15985036, y: 1, z: 2.6553824}
-  m_Center: {x: -0.42007494, y: 0, z: 0.028041866}
 --- !u!1 &438239694
 GameObject:
   m_ObjectHideFlags: 0
@@ -1524,61 +1467,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7b8c280133350745896f4475c643696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectBall
-  isStriped: 1
+  isStriped: 0
   isEightBall: 0
---- !u!1 &749353464
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 749353465}
-  - component: {fileID: 749353466}
-  m_Layer: 6
-  m_Name: Bound (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &749353465
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 749353464}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.015, y: 0, z: 2.111}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 125590430}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!65 &749353466
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 749353464}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.15985036, y: 1, z: 2.6553824}
-  m_Center: {x: -0.42007494, y: 0, z: 0.028041866}
 --- !u!1 &773674307
 GameObject:
   m_ObjectHideFlags: 0
@@ -2148,7 +2038,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7b8c280133350745896f4475c643696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectBall
-  isStriped: 1
+  isStriped: 0
   isEightBall: 0
 --- !u!1 &888059645
 GameObject:
@@ -2413,7 +2303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7b8c280133350745896f4475c643696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectBall
-  isStriped: 1
+  isStriped: 0
   isEightBall: 0
 --- !u!1001 &923630900
 PrefabInstance:
@@ -2484,16 +2374,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 428a993b95da0d245b28feb694ffa283, type: 2}
     - target: {fileID: -2390311953630327030, guid: 3f74685b047df0341abd37a95232f986, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: -2390311953630327030, guid: 3f74685b047df0341abd37a95232f986, type: 3}
       propertyPath: m_TagString
       value: Pocket
-      objectReference: {fileID: 0}
-    - target: {fileID: -1381051798580771519, guid: 3f74685b047df0341abd37a95232f986, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -1381051798580771519, guid: 3f74685b047df0341abd37a95232f986, type: 3}
       propertyPath: m_TagString
@@ -2511,14 +2393,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: table
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 3f74685b047df0341abd37a95232f986, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3346697318228935093, guid: 3f74685b047df0341abd37a95232f986, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 3346697318228935093, guid: 3f74685b047df0341abd37a95232f986, type: 3}
       propertyPath: m_TagString
       value: Pocket
@@ -2528,16 +2402,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 428a993b95da0d245b28feb694ffa283, type: 2}
     - target: {fileID: 8001403737196104535, guid: 3f74685b047df0341abd37a95232f986, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8001403737196104535, guid: 3f74685b047df0341abd37a95232f986, type: 3}
       propertyPath: m_TagString
       value: Pocket
-      objectReference: {fileID: 0}
-    - target: {fileID: 9152363913774390056, guid: 3f74685b047df0341abd37a95232f986, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2732,7 +2598,6 @@ GameObject:
   - component: {fileID: 1099637090}
   - component: {fileID: 1099637089}
   - component: {fileID: 1099637088}
-  - component: {fileID: 1099637093}
   m_Layer: 0
   m_Name: Cue Ball
   m_TagString: Cue Ball
@@ -2859,19 +2724,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -5.768, z: 0}
---- !u!114 &1099637093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1099637087}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 737ebe33ab18c75429a59e03f6b42ff9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CueBall
-  CueBallSpawn: {fileID: 1488268598}
 --- !u!1 &1116194195
 GameObject:
   m_ObjectHideFlags: 0
@@ -3332,7 +3184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7b8c280133350745896f4475c643696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectBall
-  isStriped: 1
+  isStriped: 0
   isEightBall: 0
 --- !u!1 &1293222803
 GameObject:
@@ -3487,7 +3339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectBall
   isStriped: 0
-  isEightBall: 1
+  isEightBall: 0
 --- !u!1 &1334378579
 GameObject:
   m_ObjectHideFlags: 0
@@ -3642,59 +3494,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObjectBall
   isStriped: 0
   isEightBall: 0
---- !u!1 &1335459646
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1335459647}
-  - component: {fileID: 1335459648}
-  m_Layer: 6
-  m_Name: Bound
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1335459647
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1335459646}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.787, y: 0, z: -0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 125590430}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1335459648
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1335459646}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.15985034, y: 1, z: 4.781273}
-  m_Center: {x: -0.42007494, y: 0, z: 0.031236649}
 --- !u!1 &1339072500 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8001403737196104535, guid: 3f74685b047df0341abd37a95232f986, type: 3}
@@ -3873,39 +3672,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7b8c280133350745896f4475c643696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectBall
-  isStriped: 1
+  isStriped: 0
   isEightBall: 0
---- !u!1 &1488268597
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1488268598}
-  m_Layer: 0
-  m_Name: CueBallSpawn
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1488268598
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1488268597}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.050311364, z: 0, w: 0.9987336}
-  m_LocalPosition: {x: 0.04, y: 0.136, z: -0.654}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1572716188
 GameObject:
   m_ObjectHideFlags: 0
@@ -4361,59 +4129,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObjectBall
   isStriped: 0
   isEightBall: 0
---- !u!1 &1676207374
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1676207375}
-  - component: {fileID: 1676207376}
-  m_Layer: 6
-  m_Name: Bound (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1676207375
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1676207374}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.916, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 125590430}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1676207376
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1676207374}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.15985034, y: 1, z: 4.781273}
-  m_Center: {x: -0.42007494, y: 0, z: 0.031236649}
 --- !u!1001 &1796382962
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4620,7 +4335,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 187867201}
   - {fileID: 1572716191}
-  - {fileID: 1488268598}
   - {fileID: 1099637092}
   - {fileID: 773674308}
   - {fileID: 125590430}
