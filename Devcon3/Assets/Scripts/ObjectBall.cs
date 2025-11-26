@@ -5,17 +5,6 @@ public class ObjectBall : MonoBehaviour
     public bool isStriped = false;
     public bool isEightBall = false;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -23,16 +12,34 @@ public class ObjectBall : MonoBehaviour
         {
             if (isEightBall)
             {
+                GameManager.instance.pocketedSolids++;
                 Debug.Log("Eight ball pocketed");
                 Destroy(this.gameObject);
             }
 
             if (isStriped)
             {
+                if (!DisplayRack.instance.firstStripPocketed)
+                {
+                    DisplayRack.instance.firstStripPocketed = true;
+                    Destroy(this.gameObject);
+                    return;
+                }
+
+                GameManager.instance.pocketedStripes++;
                 Debug.Log("Striped ball pocketed");
             }
             else
             {
+                if (!DisplayRack.instance.firstSolidPocketed)
+                {
+                    DisplayRack.instance.firstSolidPocketed = true;
+                    Destroy(this.gameObject);
+                    return;
+                }
+                    
+
+                GameManager.instance.pocketedSolids++;
                 Debug.Log("Solid ball pocketed");
             }
 

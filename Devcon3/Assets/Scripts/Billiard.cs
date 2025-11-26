@@ -10,12 +10,6 @@ public class Billiard : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-
-    void Update()
-    {
-        
-    }
-
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Cue")
