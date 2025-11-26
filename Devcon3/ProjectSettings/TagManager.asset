@@ -8,6 +8,7 @@ TagManager:
   - Billiard
   - Cue Ball
   - Pocket
+  - Cushion
   layers:
   - Default
   - TransparentFX
