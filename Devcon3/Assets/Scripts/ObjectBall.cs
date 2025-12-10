@@ -6,12 +6,21 @@ public class ObjectBall : MonoBehaviour
     public bool isStriped = false;
     public bool isEightBall = false;
     public TurnManager turnMan;
+    public HomunculusController homMan;
 
     private void OnTriggerEnter(Collider other)
     {
         // If object ball enters a pocket
         if (other.gameObject.tag == "Pocket")
         {
+            foreach (Transform child in transform)
+            {
+                if (child.gameObject.name == "Homunculus")
+                {
+                    homMan.BallSunk();
+                }
+            }
+
             // Delineate eight ball
             if (isEightBall)
             {
