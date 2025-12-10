@@ -1,3 +1,5 @@
+using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class DisplayRack : MonoBehaviour
@@ -12,6 +14,9 @@ public class DisplayRack : MonoBehaviour
 
     public GameObject[] stripes;
     public GameObject[] solids;
+
+    public List<GameObject> stripedBilliards;
+    public List<GameObject> solidBilliards;
 
     private void Awake()
     {
@@ -29,6 +34,8 @@ public class DisplayRack : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        
+
         for (int i = 0; i < stripes.Length; i++)
         {
             stripes[i].SetActive(false);
