@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/brandonScene.unity
     guid: 9a8ada8ee0cde524cadb4133ab17c014
+  - enabled: 1
+    path: Assets/Scenes/StartScene.unity
+    guid: 6e46e95bb1c8deb468d2fa6281a2b49f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
