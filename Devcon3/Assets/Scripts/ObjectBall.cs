@@ -5,7 +5,7 @@ public class ObjectBall : MonoBehaviour
 {
     public bool isStriped = false;
     public bool isEightBall = false;
-
+    public TurnManager turnMan;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -15,9 +15,11 @@ public class ObjectBall : MonoBehaviour
             // Delineate eight ball
             if (isEightBall)
             {
+                turnMan.eightballsunk();
                 GameManager.instance.pocketedSolids++;
                 Debug.Log("Eight ball pocketed");
                 Destroy(this.gameObject);
+                
             }
 
             // Delineate stripe and solids
