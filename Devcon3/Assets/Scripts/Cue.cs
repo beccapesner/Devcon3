@@ -8,7 +8,7 @@ public class Cue : MonoBehaviour
     Vector3 desiredVelocity;
     Transform lastStableTransform;
 
-
+    public Gamemanager gameMan;
     public float moveSpeed = 15.0f;
 
     public InputActionReference move;
@@ -102,6 +102,7 @@ public class Cue : MonoBehaviour
 
     private void Stop(InputAction.CallbackContext context)
     {
+            
         PositionCue();
         //rb.linearVelocity = Vector3.zero;
     }
