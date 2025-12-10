@@ -753,7 +753,7 @@ MonoBehaviour:
   cueStick: {fileID: 797864118}
   objectBalls: []
   cueBall: {fileID: 1099637087}
-  displayRack: {fileID: 0}
+  displayRack: {fileID: 985662509}
   pocketedStripes: 0
   pocketedSolids: 0
 --- !u!4 &353686363 stripped
@@ -4008,6 +4008,55 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1494896653
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1494896655}
+  - component: {fileID: 1494896654}
+  m_Layer: 0
+  m_Name: TurnMananager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1494896654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494896653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9c68fe131aba724eb95782845ee17ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Gamemanager
+  playerTurnText: {fileID: 898733245}
+  displayRack: {fileID: 985662509}
+  isP1sTurn: 0
+  p2BallsSunk: 0
+  p1BallsSunk: 0
+--- !u!4 &1494896655
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494896653}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 898.76263, y: 763.61224, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1502766296 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 688167100325979254, guid: 761366059d4500a40aa3fa37a162c8d3, type: 3}
@@ -5229,6 +5278,7 @@ SceneRoots:
   - {fileID: 125590430}
   - {fileID: 1796382962}
   - {fileID: 850644169}
+  - {fileID: 1494896655}
   - {fileID: 339355165}
   - {fileID: 1886736311}
   - {fileID: 985662510}
