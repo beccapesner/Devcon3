@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
 
     bool cueStickVisable = true;
 
+    public bool doubleTime = false;
+
     private void Awake()
     {
         if (instance == null)
@@ -40,7 +42,14 @@ public class GameManager : MonoBehaviour
     {
         HandleCue();
 
-
+        if (doubleTime)
+        {
+            Time.timeScale = 3.0f;
+        }
+        else
+        {
+            Time.timeScale = 1.0f;
+        }
     }
 
     private void HandleCue()
