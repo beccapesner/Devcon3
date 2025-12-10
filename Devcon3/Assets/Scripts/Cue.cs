@@ -6,26 +6,34 @@ public class Cue : MonoBehaviour
     Rigidbody rb;
 
     Vector3 desiredVelocity;
+    Transform lastStableTransform;
+
+    public Gamemanager gameMan;
+    public float moveSpeed = 15.0f;
 
     public InputActionReference move;
     public InputActionReference stop;
 
+    bool isStopPressed;
+
     [SerializeField] private GameObject cueBall;
+    //[SerializeField] private GameObject cueHolder;
 
     [Header("Cue Input")]
     [SerializeField] private float rotationSpeed = 25.0f;
-    public float moveSpeed = 15.0f;
 
 
     void Start()
     {
         // Get Rigidbody
         rb = GetComponent<Rigidbody>();
-        
+
         // Test CueBall
         cueBall = GameObject.FindGameObjectWithTag("Cue Ball");
 
         // Get cue holder transform
+        //cueHolder = this.transform.parent.gameObject;
+
         PositionCue();
     }
 
@@ -40,9 +48,6 @@ public class Cue : MonoBehaviour
             UpdateRotation(desiredVelocity.x, rotationSpeed);
         }
 
-
-
-        // Debug ray for scene view
         Debug.DrawRay(this.transform.position, GetDirection(cueBall.transform.position) * 100f, Color.red);
     }
 
@@ -97,6 +102,7 @@ public class Cue : MonoBehaviour
 
     private void Stop(InputAction.CallbackContext context)
     {
+            
         PositionCue();
         //rb.linearVelocity = Vector3.zero;
     }
