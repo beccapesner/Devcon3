@@ -27,12 +27,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1186204544974058137}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.42000008, z: 0}
-  m_LocalScale: {x: 0.5406656, y: 0.005, z: 1.4593576}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -1.9503103, y: 0.2540002, z: -1.8598702}
+  m_LocalScale: {x: 1.2699999, y: 0.005, z: 2.5399997}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3064852228426031990}
+  m_Father: {fileID: 1434174544464559243}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!33 &6449044869321267375
 MeshFilter:
@@ -141,6 +141,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3064852228426031990}
+  - {fileID: 7123222429956172874}
+  - {fileID: 8931966805725795905}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9210810195250782397
@@ -170,12 +172,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9210810195250782397}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.502, z: 0}
-  m_LocalScale: {x: 0.5406656, y: 0.005, z: 1.4593576}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -1.9503103, y: 0.3360001, z: -1.8598702}
+  m_LocalScale: {x: 1.2699999, y: 0.005, z: 2.5399997}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3064852228426031990}
+  m_Father: {fileID: 1434174544464559243}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!33 &2661346607832150347
 MeshFilter:
@@ -316,13 +318,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 3617803025913177679, guid: 499c6e3d6ee9050418756949728339ee, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7123222429956172874}
-    - targetCorrespondingSourceObject: {fileID: 3617803025913177679, guid: 499c6e3d6ee9050418756949728339ee, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8931966805725795905}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 499c6e3d6ee9050418756949728339ee, type: 3}
 --- !u!4 &3064852228426031990 stripped
