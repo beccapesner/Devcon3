@@ -4117,6 +4117,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3569519764399172552, guid: 7b7cc046b0fe9994dbdeb8cc1c6da21b, type: 3}
+      propertyPath: homunculusSpawn
+      value: 
+      objectReference: {fileID: 543102782}
+    - target: {fileID: 3569519764399172552, guid: 7b7cc046b0fe9994dbdeb8cc1c6da21b, type: 3}
       propertyPath: ballsInPlay.Array.size
       value: 14
       objectReference: {fileID: 0}
