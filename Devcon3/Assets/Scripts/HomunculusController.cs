@@ -47,6 +47,7 @@ using UnityEngine;
                     target.transform.SetParent(transform);    
                     target.transform.localPosition = new Vector3(0.01f, 5.5f, 0.01f);
                     hasPickedUpBall = true;
+                    transform.rotation = Quaternion.Euler(0f, 270f, 0f);
                 }
                 else if (hasPickedUpBall)
                 {

@@ -7,6 +7,7 @@ public class ObjectBall : MonoBehaviour
     public bool isEightBall = false;
     public TurnManager turnMan;
     public HomunculusController homMan;
+    public GelCubeController gelMan;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -18,6 +19,10 @@ public class ObjectBall : MonoBehaviour
                 if (child.gameObject.name == "Homunculus")
                 {
                     homMan.BallSunk();
+                }
+                if (child.gameObject.name == "GelCube")
+                {
+                    gelMan.BallSunk();
                 }
             }
 
