@@ -914,6 +914,7 @@ MonoBehaviour:
   objectBalls: []
   cueBall: {fileID: 1099637087}
   displayRack: {fileID: 985662509}
+  turnMan: {fileID: 1494896656}
   pocketedStripes: 0
   pocketedSolids: 0
 --- !u!4 &353686363 stripped
